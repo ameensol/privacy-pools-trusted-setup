@@ -1,0 +1,26 @@
+{
+  "name": "pools-ceremony",
+  "scripts": {
+    "compile": "npx circom ./circuits/withdraw_from_subset_simple.circom --r1cs ./build/withdraw_from_subset_simple.r1cs --wasm ./build/withdraw_from_subset_simple.wasm --sym ./build/withdraw_from_subset_simple.sym -v"
+  },
+  "description": "Contributing to the ceremony requires some command line skills, but it should be simple.",
+  "version": "0.0.1",
+  "main": "contribute.sh",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/privacy-pools/trusted-setup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/privacy-pools/trusted-setup/issues"
+  },
+  "homepage": "https://github.com/privacy-pools/trusted-setup#readme",
+  "dependencies": {
+    "blake2": "^5.0.0",
+    "circomlib": "^2.0.5",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "snarkjs": "^0.6.6"
+  }
+}
